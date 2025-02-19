@@ -1,0 +1,6 @@
+@jovision_HostAddress = http://localhost:5082
+
+GET {{jovision_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
