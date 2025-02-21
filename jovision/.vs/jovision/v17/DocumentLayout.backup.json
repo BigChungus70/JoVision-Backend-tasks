@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\JoVision-Backend-tasks\\jovision\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|d:\\jovision-backend-tasks\\jovision\\jovision.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|solutionrelative:jovision.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|d:\\jovision-backend-tasks\\jovision\\controllers\\task44\\greeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|solutionrelative:controllers\\task44\\greeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|d:\\jovision-backend-tasks\\jovision\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|d:\\jovision-backend-tasks\\jovision\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EA8DC46-D887-4AAD-B284-CAF710AF1E1C}|jovision.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\JoVision-Backend-tasks\\jovision\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\JoVision-Backend-tasks\\jovision\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T04:26:08.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\JoVision-Backend-tasks\\jovision\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\JoVision-Backend-tasks\\jovision\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:12:51.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Greeter.cs",
+              "DocumentMoniker": "D:\\JoVision-Backend-tasks\\jovision\\Controllers\\Task44\\Greeter.cs",
+              "RelativeDocumentMoniker": "Controllers\\Task44\\Greeter.cs",
+              "ToolTip": "D:\\JoVision-Backend-tasks\\jovision\\Controllers\\Task44\\Greeter.cs",
+              "RelativeToolTip": "Controllers\\Task44\\Greeter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:33:37.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "jovision.http",
+              "DocumentMoniker": "D:\\JoVision-Backend-tasks\\jovision\\jovision.http",
+              "RelativeDocumentMoniker": "jovision.http",
+              "ToolTip": "D:\\JoVision-Backend-tasks\\jovision\\jovision.http*",
+              "RelativeToolTip": "jovision.http*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-19T20:33:20.317Z",
+              "EditorCaption": ""
             }
           ]
         }
