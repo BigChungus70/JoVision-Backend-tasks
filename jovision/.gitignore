@@ -1,1 +1,12 @@
+# Visual Studio and build artifacts
 .vs/
+bin/
+obj/
+debug/
+debug/
+*.user
+*.suo
+*.cache
+*.pdb
+*.log
+*.db
