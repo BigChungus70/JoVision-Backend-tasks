@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jovision")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16238610aa9776dc4d826661e874d9c4c6efa697")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b29a62997125c05a6543f0daa9d2f6e7487a52bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("jovision")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jovision")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
