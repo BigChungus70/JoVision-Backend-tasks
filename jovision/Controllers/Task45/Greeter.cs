@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace jovision.Controllers.Task44;
+namespace jovision.Controllers.Task45;
 
 [ApiController]
-[Route("task44/[controller]")]
+[Route("task45/[controller]")]
 public class Greeter : ControllerBase
 {
 

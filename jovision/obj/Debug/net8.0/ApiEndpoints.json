@@ -2,7 +2,74 @@
   {
     "ContainingType": "jovision.Controllers.Task44.Greeter",
     "Method": "Get",
-    "RelativePath": "task1/Greeter",
+    "RelativePath": "task44/Greeter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task45.BirthDate",
+    "Method": "Get",
+    "RelativePath": "task45/BirthDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "years",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "months",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "days",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task45.Greeter",
+    "Method": "Get",
+    "RelativePath": "task45/Greeter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

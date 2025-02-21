@@ -3,7 +3,6 @@
 bin/
 obj/
 debug/
-debug/
 *.user
 *.suo
 *.cache
