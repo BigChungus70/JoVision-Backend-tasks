@@ -257,6 +257,46 @@
           }
         }
       }
+    },
+    "/Task47/ImgCreate": {
+      "post": {
+        "tags": [
+          "ImgCreate"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Task47/ImgDelete": {
+      "delete": {
+        "tags": [
+          "ImgDelete"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ownerName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": { }

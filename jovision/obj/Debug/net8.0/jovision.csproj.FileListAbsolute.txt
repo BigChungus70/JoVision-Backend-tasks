@@ -35,3 +35,7 @@ D:\JoVision-Backend-tasks\jovision\obj\Debug\net8.0\refint\jovision.dll
 D:\JoVision-Backend-tasks\jovision\obj\Debug\net8.0\jovision.pdb
 D:\JoVision-Backend-tasks\jovision\obj\Debug\net8.0\jovision.genruntimeconfig.cache
 D:\JoVision-Backend-tasks\jovision\obj\Debug\net8.0\ref\jovision.dll
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Scrutor.dll
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

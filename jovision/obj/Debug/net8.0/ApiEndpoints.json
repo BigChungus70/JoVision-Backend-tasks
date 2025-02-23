@@ -158,5 +158,36 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task47.ImgCreate",
+    "Method": "post",
+    "RelativePath": "Task47/ImgCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task47.ImgDelete",
+    "Method": "delete",
+    "RelativePath": "Task47/ImgDelete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ownerName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
