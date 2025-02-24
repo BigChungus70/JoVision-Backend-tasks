@@ -170,10 +170,41 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "jovision.Controllers.Task47.ImgUpdate",
+    "Method": "update",
+    "RelativePath": "Task47/ImgUpdate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "jovision.Controllers.Task47.ImgDelete",
     "Method": "delete",
-    "RelativePath": "Task47/ImgDelete",
+    "RelativePath": "Task48/ImgDelete",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ownerName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task47.ImgRetrieve",
+    "Method": "get",
+    "RelativePath": "Task48/ImgRetrieve",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

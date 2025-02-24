@@ -270,7 +270,7 @@
         }
       }
     },
-    "/Task47/ImgDelete": {
+    "/Task48/ImgDelete": {
       "delete": {
         "tags": [
           "ImgDelete"
@@ -290,6 +290,46 @@
               "type": "string"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Task48/ImgRetrieve": {
+      "get": {
+        "tags": [
+          "ImgRetrieve"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ownerName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Task47/ImgUpdate": {
+      "put": {
+        "tags": [
+          "ImgUpdate"
         ],
         "responses": {
           "200": {

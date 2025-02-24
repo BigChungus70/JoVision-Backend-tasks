@@ -6,17 +6,17 @@ namespace jovision.Controllers.Task47
 {
     [Route("Task48/[controller]")]
     [ApiController]
-    public class ImgDelete : ControllerBase
+    public class ImgRetrieve : ControllerBase
     {
         private ImgService service;
 
-        public ImgDelete(ImgService service)
+        public ImgRetrieve(ImgService service)
         {
             this.service = service;
         }
 
-        [HttpDelete]
-        public IActionResult delete([FromQuery] string? fileName, [FromQuery] string? ownerName)
+        [HttpGet]
+        public IActionResult get([FromQuery] string? fileName, [FromQuery] string? ownerName)
         {
             if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(ownerName))
             {
@@ -24,13 +24,15 @@ namespace jovision.Controllers.Task47
             }
             try
             {
-                return service.deleteImage(fileName, ownerName) switch
+                var result = service.retrieveImage(fileName, ownerName);
+
+                return result.Message switch
                 {
-                    "File Does Not Exist" => BadRequest("File Does Not Exist"),
-                    "Metadata File Does Not Exist" => BadRequest("Metadata File Does Not Exist"),
+                    "File Does Not Exist" => NotFound("File Does Not Exist"),
+                    "Metadata File Does Not Exist" => NotFound("Metadata File Does Not Exist"),
                     "Forbidden" => StatusCode(StatusCodes.Status403Forbidden, "Forbidden, you are not the owner"),
-                    "Deleted" => Ok("Deleted Successfully"),
-                    _ => StatusCode(500, "InternalServerError")
+                    "Ok" => File(result.ImageData, result.ContentType),
+                    _ => StatusCode(500, "Internal Server Error")
                 };
             }
             catch (Exception ex)
@@ -38,5 +40,6 @@ namespace jovision.Controllers.Task47
                 return StatusCode(500, $"Internal Server Error: {ex.Message}");
             }
         }
+        
     }
 }
