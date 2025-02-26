@@ -1,6 +1,8 @@
 ﻿
 using jovision.Models.Task48;
+using jovision.Models.Task49;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 namespace jovision.Services.Task47
 {
@@ -129,6 +131,95 @@ namespace jovision.Services.Task47
                 Message = "Ok"
 
             };
+        }
+        public List<FilteredDTO> getFilesByModificationDate(DateTime modificationDate)
+        {
+            var file = from x in getAllMetadata()
+                       where x.ModificationDate < modificationDate
+                       select new FilteredDTO
+                       {
+                           FileName = x.FileName,
+                           Owner = x.Owner
+                       } ;
+
+            return file.ToList();
+        }
+        public List<FilteredDTO> getFilesByCreationDateDescending(DateTime creationDate)
+        {
+            var file = from x in getAllMetadata()
+                       where x.CreationDate > creationDate
+                       orderby x.CreationDate descending
+                       select new FilteredDTO
+                       {
+                           FileName = x.FileName,
+                           Owner = x.Owner
+                       };
+
+            return file.ToList();
+        }
+        public List<FilteredDTO> getFilesByCreationDateAscending(DateTime creationDate)
+        {
+            var file = from x in getAllMetadata()
+                       where x.CreationDate > creationDate
+                       orderby x.CreationDate ascending
+                       select new FilteredDTO
+                       {
+                           FileName = x.FileName,
+                           Owner = x.Owner
+                       };
+
+            return file.ToList();
+        }
+        public List<FilteredDTO> getFilesByOwner(string owner)
+        {
+            var file = from x in getAllMetadata()
+                       where x.Owner.Equals(owner, StringComparison.OrdinalIgnoreCase)
+                       select new FilteredDTO
+                       {
+                           FileName = x.FileName,
+                           Owner = x.Owner
+                       };
+
+            return file.ToList();
+        }
+
+        public List<String> transferOwner(string oldOwner, string newOwner)
+        {
+            var filesToTransfer = from file in getAllMetadata()
+                                  where file.Owner.Equals(oldOwner, StringComparison.OrdinalIgnoreCase)
+                                  select file;
+            foreach (var file in filesToTransfer)
+            {
+                string metadataPath = Path.Combine("Resources", file.FileName + ".json");
+
+                var metadata = new { Owner = newOwner, CreatedAt = file.CreationDate, LastModified = DateTime.Now };
+                File.WriteAllText(metadataPath, JsonSerializer.Serialize(metadata));
+            }
+
+            var updatedFiles = from file in getAllMetadata()
+                               where file.Owner.Equals(newOwner, StringComparison.OrdinalIgnoreCase)
+                               select file.FileName;
+
+            return updatedFiles.ToList();
+        }
+
+
+        private List<MetaDataDTO> getAllMetadata()
+        {
+            var metaFiles = Directory.GetFiles("Resources", "*.json");
+
+            var files = from metadataFile in metaFiles
+                        let metadata = JsonSerializer.Deserialize<Dictionary<string, object>>(File.ReadAllText(metadataFile))
+                        where metadata != null && metadata.ContainsKey("Owner") && metadata.ContainsKey("CreatedAt") && metadata.ContainsKey("LastModified")
+                        select new MetaDataDTO
+                        {
+                            FileName = Path.GetFileNameWithoutExtension(metadataFile) ?? throw new Exception("File has no name"),
+                            Owner = metadata["Owner"].ToString() ?? throw new Exception("Empty Owner"),
+                            CreationDate = DateTime.TryParse(metadata["CreatedAt"].ToString(), out var created) ? created: throw new Exception("Invalid or missing CreationDate"),
+                            ModificationDate = DateTime.TryParse(metadata["LastModified"].ToString(), out var modified)? modified: throw new Exception("Invalid or missing ModificationDate")
+                        };
+
+            return files.ToList();
         }
     }
 }

@@ -220,5 +220,36 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task47.ImgFilter",
+    "Method": "filter",
+    "RelativePath": "Task49/ImgFilter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "jovision.Controllers.Task47.ImgTransferOwnership",
+    "Method": "transferOwnership",
+    "RelativePath": "Task49/ImgTransferOwnership",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oldOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

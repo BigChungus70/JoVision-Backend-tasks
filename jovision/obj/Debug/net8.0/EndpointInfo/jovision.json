@@ -298,6 +298,18 @@
         }
       }
     },
+    "/Task49/ImgFilter": {
+      "post": {
+        "tags": [
+          "ImgFilter"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Task48/ImgRetrieve": {
       "get": {
         "tags": [
@@ -313,6 +325,34 @@
           },
           {
             "name": "ownerName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Task49/ImgTransferOwnership": {
+      "put": {
+        "tags": [
+          "ImgTransferOwnership"
+        ],
+        "parameters": [
+          {
+            "name": "oldOwner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "newOwner",
             "in": "query",
             "schema": {
               "type": "string"

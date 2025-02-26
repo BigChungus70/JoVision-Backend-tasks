@@ -40,3 +40,5 @@ D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Scrutor.dll
 D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
 D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Resources\2025-2-24@1-7-5.json
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Resources\2024-11-11@3-49-44.json
+D:\JoVision-Backend-tasks\jovision\bin\Debug\net8.0\Resources\2025-1-15@21-18-23.json
